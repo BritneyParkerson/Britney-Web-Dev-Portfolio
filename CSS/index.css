@@ -1,0 +1,542 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+    background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px;
+    
+}
+.Brit{
+    height: 75px;
+    width: 200px;
+    border-radius: 30px;
+}
+header nav a{
+	margin: auto;
+    font-size: 15px;
+	padding: 18px 10px 15px 10px;
+    color: black;
+    align-items: stretch;
+    text-align: center;
+    border: 5px outset grey;
+    border-radius: 30px;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    color: black;
+    font-weight: bold;
+
+}	
+header nav a:hover{
+    border: 5px inset rgb(92, 16, 54);
+    background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    color: rgb(49, 40, 40);
+    font-weight: bold;
+}
+
+.Welcome{
+    width: 920px;
+    margin-bottom: 20px;
+}
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content .text-container {
+    width: auto;
+    padding: 0 1%;
+    padding-bottom: 20px; 
+    text-align: left; 
+    border: 2px solid slategrey;
+    border-radius: 30px;
+    margin: 20px;
+    background: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+    color: teal;
+}
+
+.top-content p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: teal;
+    
+}
+
+li{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding: 5px 20px 5px 20px;
+    color: teal;
+    
+}
+
+li a{
+    margin: auto;
+    font-size: 15px;
+	padding: 5px 20px 5px 20px;
+    color: black;
+    text-align: center;
+    border: 5px outset rgb(61, 72, 102);
+    border-radius: 15px;
+    color: black;
+    font-weight: bold;
+    background: linear-gradient(120deg, #865faa 0%, #609fdf 100%);
+}
+
+li a:hover{
+    border: 5px inset rgb(92, 16, 92);
+    background: linear-gradient(120deg, #d117a3 0%, #c566b8 100%);
+    color: rgb(49, 40, 40);
+    font-weight: bold;
+}
+
+.top-content h2{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+.middle-content .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    margin: 20px auto;
+    
+}
+
+.middle-content .boxes .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+    width: 25%;
+    height: 200px;
+    background: black;
+    margin: 20px 3% 20px 4%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 75px;
+    border: 5px dotted rgb(160, 160, 160);
+    
+}
+a {
+    font-size: 30px;
+    color: White;
+    font-weight: bold;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+
+
+}
+
+.box1{
+    background: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+}
+.box2{
+    background: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+.box3{
+    background: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+}
+.box4{
+    background: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+}
+.box5{
+    background:  linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+.box6{
+    background: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+.box7{
+    background:  linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+}
+.box8{
+    background: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+}
+.box9{
+    background: linear-gradient(-225deg, #65379B 0%, #886AEA 53%, #6457C6 100%);
+}
+.box10{
+    background: dodgerblue;
+}
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(24, 26, 26);
+    font-weight: bold;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+.bottom-content h2{
+    font-size: 30px;
+    border: 5px outset silver;
+    border-radius: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 100%;
+    padding: 20px 2%;
+    font-size: 10px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px outset black;
+    padding: 12px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+footer nav a:hover{
+    background: linear-gradient(to right, red, white, blue);
+    color: navy;
+    border: 2px inset white;
+}
+
+/*About CSS here"*/
+
+.container-about-page {
+    width: 805px;
+    margin: 0 auto;
+    border: 2px solid white);
+}
+
+.jumbo-about{
+    margin-bottom: 20px;
+}
+.About h1{
+    font-size: 25px;
+}
+.About{
+    font-size: 16px;
+    line-height: 25px;
+    
+}
+
+#options1-container{
+	display: flex;
+	
+    
+}
+.paragraphs1, .paragraphs2{
+	border: 20px;
+	width: 50%;
+    margin: auto;
+    padding: auto;
+    
+}
+h2{ 
+    margin: 20px;
+}
+p{
+    margin: 20px;
+}
+
+.options img{
+    width: 90%;
+    margin: 20px ;
+}
+
+button{
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+}
+
+----------------------
+
+.services p{
+	font-size: 16px;
+	text-align: left;
+	letter-spacing: 2px;
+	line-height: 30px;
+	font-family: 'big shoulders text', cursive;
+	margin-bottom: 25px;
+}
+
+.options{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: evenly;
+	align-content: space-between;
+	border-top: 2px dotted black;
+    margin: 25px 0px 25px 0px;	
+    padding-bottom: 10px;
+}
+
+.work-together h1{
+    font-size: 25px;
+}
+.work-together{
+    font-size: 16px;
+    line-height: 25px;
+    padding: 30px;
+    border-top: 2px dotted black;
+    
+}
+/*About CSS*/
+
+.ab-container {
+    width: 920px;
+    margin: 0 auto;
+    background: linear-gradient(to left, #977df5 0%, rgb(77, 38, 119) 29%, rgb(243, 44, 110) 67%, #FFF800 100%);
+}
+
+/*Pagea Under Construction*/
+#Construction-container {
+    background-image: linear-gradient(50deg, #1d1c1f 0%, #646a6b 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #Construction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+  /*About*/
+  #AConstruction-container {
+    background-image: linear-gradient(50deg, #290f5e 0%, #56909b 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #AConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #PeConstruction-container {
+    background-image: linear-gradient(50deg, #bb2f05 0%, #be9628 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #PeConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #FConstruction-container {
+    background-image: linear-gradient(50deg, #c5236f 0%, #f1a9cb 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #FConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #WConstruction-container {
+    background-image: linear-gradient(50deg, #084608 0%, #77f047 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #WConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #PhConstruction-container {
+    background-image: linear-gradient(50deg, #520202 0%, #fd5050 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #PhConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #BoConstruction-container {
+    background-image: linear-gradient(50deg, #2b033d 0%, #cb77fc 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #Construction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #BlConstruction-container {
+    background-image: linear-gradient(50deg, #5e6405 0%, #fbff00 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #BlConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
+
+  #CConstruction-container {
+    background-image: linear-gradient(50deg, #027896 0%, #91fbff 100%);
+    width: 920px;
+    margin: auto;
+  }
+  
+  #CConstruction-container #footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .Under-Construction-img {
+    margin: auto;
+    padding: 35px;
+  }
