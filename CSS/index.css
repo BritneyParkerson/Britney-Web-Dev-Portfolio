@@ -150,3 +150,100 @@ h5 {
 }
 
 /* My CSS Below This Line */
+
+/*Main Home Page*/
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.neon {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(200%);
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 180px;
+  font-weight: bold;
+  font-family: Comic Sans MS;
+  text-transform: uppercase;
+  position: relative;
+  user-select: none;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  filter: blur(0.02em);
+  mix-blend-mode: difference;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(45deg, rgb(35, 131, 175), rgb(82, 43, 155), rgb(125, 184, 125), rgb(82, 43, 155),  rgb(35, 131, 175));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: 
+      radial-gradient(
+          circle,
+          white,
+          transparent 25%
+      ) center / 25% 25%,
+      radial-gradient(
+          circle,
+          white,
+          black 25%
+      ) center / 12.5% 12.5%;
+  animation: light 5s linear infinite;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  to {
+      transform: translate(50%, 50%);
+  }
+}
+
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  position: absolute;
+  margin: 15% auto;
+}
+a{
+  color: white;
+  border: 3px outset silver;
+  padding: 20px;
+  margin: 1%;
+  border-radius: 25px;
+}
+a:hover{
+  color: pink;
+  border: 3px inset goldenrod;
+}
+
