@@ -224,10 +224,10 @@ body {
   }
 }
 
-p{
+button{
   color: grey;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   font-family: "Comic Sans MS", cursive, sans-serif;
   position: absolute;
